@@ -1,0 +1,17 @@
+{
+  "name": "CSR-PLAYER — Hear Different",
+  "short_name": "CSR-PLAYER",
+  "description": "Offline-first open-source music player",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F2E8",
+  "theme_color": "#354BCB",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

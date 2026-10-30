@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-canvas: #F5F2E8;
+    --color-surface: #FFFEFA;
+    --color-ink: #20252D;
+    --color-muted: #777777;
+    --color-cobalt: #354BCB;
+    --color-coral: #F47768;
+    --color-lemon: #F5E94A;
+    --color-lavender: #B9A6F2;
+    --color-mint: #A8E6D8;
+    --color-line: #343434;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+}
+
+/* Custom scrollbar matching editorial aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f0ece0;
+}
+::-webkit-scrollbar-thumb {
+  background: #343434;
+  border-radius: 9999px;
+}
+
+/* Equalizer keyframe animations */
+@keyframes eq-bounce-1 {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+@keyframes eq-bounce-2 {
+  0%, 100% { height: 16px; }
+  50% { height: 6px; }
+}
+@keyframes eq-bounce-3 {
+  0%, 100% { height: 8px; }
+  50% { height: 20px; }
+}
+@keyframes eq-bounce-4 {
+  0%, 100% { height: 14px; }
+  50% { height: 4px; }
+}
+
+.animate-eq-1 {
+  animation: eq-bounce-1 0.7s ease-in-out infinite;
+}
+.animate-eq-2 {
+  animation: eq-bounce-2 0.5s ease-in-out infinite;
+}
+.animate-eq-3 {
+  animation: eq-bounce-3 0.8s ease-in-out infinite;
+}
+.animate-eq-4 {
+  animation: eq-bounce-4 0.6s ease-in-out infinite;
+}
